@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "backend_project"
+version = "0.1.0"
+description = ""
+authors = ["Daniil Sobolev <daniil.sob56@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.8.1"
+gino = "^1.0.1"
+alembic = "^1.7.6"
+bcrypt = "^3.2.0"
+python-dotenv = "^0.19.2"
+aiohttp_security = "^0.4.0"
+aiohttp-session = "^2.11.0"
+cryptography = "^36.0.1"
+aiohttp-jinja2 = "^1.5"
+aiosmtplib = "^1.1.6"
+psycopg2 = "^2.9.3"
+marshmallow = "^3.14.1"
+marshmallow-enum = "^1.5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

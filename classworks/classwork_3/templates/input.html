@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+        <body>
+        <h1>Calculator</h1>
+        <form action="" method="post">
+            <label for="first_num">First number:</label>
+            <input type="number" id="first_num" name="first_num" value="1"><br><br>
+            <label for="second_num">Second number:</label>
+            <input type="number" id="second_num" name="second_num" value="1"><br><br>
+            <select name="operation">
+                <option selected value="add">Sum</option>
+                <option value="sub">Subtraction</option>
+                <option value="mul">Product</option>
+                <option value="div">Division</option>
+            </select>
+            <input type="submit" value="Calculate">
+        </form>
+        {% if history_data %}
+            {% for entity in history_data[::-1]%}
+                Operation {{ entity.operation }} for number {{ entity.first_num }} and number {{ entity.second_num }}.
+                Result is equal to {{ entity.result }}<br>
+            {% endfor %}
+        {% endif %}
+    </body>
+</html>

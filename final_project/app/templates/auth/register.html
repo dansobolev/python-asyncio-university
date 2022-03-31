@@ -1,0 +1,34 @@
+<html>
+     <head>
+         <title>Register Form</title>
+     </head>
+         <body>
+         <h1>Register</h1>
+         <form method="post" enctype="multipart/form-data">
+             <label for="firstname">Firstname</label>
+             <input type="text" id="firstname" name="firstname" value="Name"><br><br>
+
+             <label for="lastname">Lastname</label>
+             <input type="text" id="lastname" name="lastname" value="Surname"><br><br>
+
+             <label for="login">Login</label>
+             <input type="text" id="login" name="login" value="Login"><br><br>
+
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" value="Email"><br><br>
+
+             <label for="phone_number">Phone number</label>
+             <input type="text" id="phone_number" name="phone_number" value="+79219999999"><br><br>
+
+             <label for="password">Password</label>
+             <input type="password" id="password" name="password" value="test"><br><br>
+
+             <label for="profile_image">Your avatar</label>
+             <input type="file" name="profile_image" id="profile_image" value=""/>
+
+             <form action="{{ redirect_url }}">
+                 <input type="submit" value="Register"/>
+             </form>
+         </form>
+     </body>
+ </html>

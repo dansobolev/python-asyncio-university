@@ -1,0 +1,1 @@
+truncate book, book_recipient;
